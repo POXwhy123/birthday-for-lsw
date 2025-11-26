@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="260"
+  height="320"
+  viewBox="0 0 260 320"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <!-- 渐变定义 -->
+  <defs>
+    <!-- 帽子主体渐变 -->
+    <linearGradient id="hatBodyGradient" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7aa2"/>
+      <stop offset="50%" stop-color="#ffb86c"/>
+      <stop offset="100%" stop-color="#ffe66c"/>
+    </linearGradient>
+
+    <!-- 帽檐渐变 -->
+    <linearGradient id="brimGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd4ec"/>
+      <stop offset="100%" stop-color="#ffe9b3"/>
+    </linearGradient>
+
+    <!-- 高光渐变 -->
+    <linearGradient id="highlightGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.9)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+
+    <!-- 阴影 -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#ff8fa3" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- 轻微发光背景圈，让帽子更突出 -->
+  <ellipse cx="130" cy="150" rx="115" ry="130"
+           fill="#ffedf6"
+           opacity="0.5"/>
+
+  <!-- 帽子 + 阴影组 -->
+  <g filter="url(#softShadow)">
+
+    <!-- 帽子主体（大三角） -->
+    <path
+      d="M 35 250 L 225 250 L 130 30 Z"
+      fill="url(#hatBodyGradient)"
+      stroke="#ff4f84"
+      stroke-width="3"
+      stroke-linejoin="round"/>
+
+    <!-- 帽子高光（左侧一块白色半透明区域） -->
+    <path
+      d="M 80 245 L 145 45 L 120 35 L 55 245 Z"
+      fill="white"
+      opacity="0.18"/>
+
+    <!-- 斜条纹装饰 -->
+    <g opacity="0.6">
+      <path d="M 55 235 L 95 250" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 75 205 L 125 225" stroke="#ffe0ff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 95 175 L 145 195" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 115 145 L 165 165" stroke="#ffe0ff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 135 115 L 185 135" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- 小星星 & 圆点（增加俏皮感） -->
+    <g>
+      <!-- 星星 -->
+      <path d="M110 185 L115 196 L127 196 L118 203 L121 214 L110 208 L99 214 L102 203 L93 196 L105 196 Z"
+            fill="#ffffff" opacity="0.9"/>
+      <path d="M160 150 L163 158 L172 158 L165 164 L167 173 L160 168 L152 173 L154 164 L147 158 L156 158 Z"
+            fill="#ffe9ff" opacity="0.9"/>
+
+      <!-- 彩色圆点 -->
+      <circle cx="90" cy="215" r="6" fill="#ffeb3b" opacity="0.9"/>
+      <circle cx="150" cy="205" r="5" fill="#8be9fd" opacity="0.9"/>
+      <circle cx="175" cy="185" r="5" fill="#ff9cf3" opacity="0.9"/>
+      <circle cx="120" cy="165" r="4" fill="#ffffff" opacity="0.9"/>
+      <circle cx="70"  cy="190" r="4" fill="#ffd180" opacity="0.9"/>
+    </g>
+
+    <!-- 帽檐（椭圆条） -->
+    <ellipse
+      cx="130" cy="250" rx="110" ry="20"
+      fill="url(#brimGradient)"
+      stroke="#ffb3d9"
+      stroke-width="3"
+      opacity="0.98"/>
+
+    <!-- 帽檐上方的高光 -->
+    <ellipse
+      cx="130" cy="245" rx="85" ry="10"
+      fill="white"
+      opacity="0.35"/>
+
+  </g>
+
+  <!-- 帽子顶部的毛绒球 -->
+  <g>
+    <!-- 光晕 -->
+    <circle cx="130" cy="26" r="20" fill="#ffe6f5" opacity="0.6"/>
+
+    <!-- 实心球 -->
+    <circle cx="130" cy="26" r="13" fill="#ffffff" stroke="#ff80ab" stroke-width="3"/>
+
+    <!-- 小火花 -->
+    <line x1="130" y1="5"  x2="130" y2="16" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
+    <line x1="130" y1="36" x2="130" y2="47" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
+    <line x1="110" y1="26" x2="120" y2="26" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="26" x2="150" y2="26" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
+
+    <line x1="118" y1="12" x2="123" y2="17" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
+    <line x1="142" y1="12" x2="137" y2="17" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
+    <line x1="118" y1="40" x2="123" y2="35" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
+    <line x1="142" y1="40" x2="137" y2="35" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 少量彩纸碎片（增加庆祝氛围） -->
+  <g opacity="0.8">
+    <path d="M30 220 Q25 215 30 210" stroke="#8be9fd" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M220 210 Q225 205 220 200" stroke="#ffb86c" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="40"  cy="205" r="3" fill="#ff9cf3"/>
+    <circle cx="220" cy="195" r="3" fill="#8be9fd"/>
+  </g>
+
+</svg>
