@@ -1,0 +1,31 @@
+{
+  "greeting": "好久不见，甚是想念",
+  "name": "小地丸",
+  "greetingText": "很高兴能在灿烂盛开的玫瑰花园里邂逅你",
+  "wishText": "西郊有密林，祝君出重围;新岁现新象，愿君上青天",
+  "imagePath": "微信图片_20251124225854_172_2.jpg",
+  "text1": "还有几分钟年轮又大一圈 :D",
+  "textInChatBox": "非常非常非常诚挚的祝你生日快乐！！！很多快乐都藏在时间的记忆……",
+  "sendButtonLabel": "发送",
+  "text2": "过去一年里有欢喜，也有很多悲伤",
+  "text3": "但过去随它而去吧",
+  "text4": "此时此刻，我更想说",
+  "text4Adjective": "屏幕前在笑的你才更重要",
+  "text5Entry": "因为，",
+  "text5Content": "For me , ypu are a sparkling star",
+  "smiley": ":)",
+  "bigTextPart1": "所",
+  "bigTextPart2": "以",
+  "wishHeading": "生日快乐啊!",
+  "outroText": "我希望你喜欢这个小小的惊喜!",
+  "replayText": "如果你喜欢的话，可以再看一次哦!或者……",
+  "outroSmiley": ":)",
+  "music": "birthday_song.m4a",
+  "fonts": [
+    {
+      "name": "Ma Shan Zheng",
+      "path": "https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap"
+    }
+  ]
+}
+
