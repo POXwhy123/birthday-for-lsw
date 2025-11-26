@@ -137,6 +137,15 @@
       <p data-node-name="outroText">Okay, now come back and tell me if you liked it.</p>
       <p id="replay" data-node-name="replayText">Or click, if you want to watch it again.</p>
       <p class="last-smile" data-node-name="outroSmiley">:)</p>
+        <div id="extraText" class="extra-btn">请看完点击下面的惊喜</div>
+
+  <!-- 新增按钮 -->
+        <button id="addTextBtn" class="extra-btn">隐藏祝福</button>
+
+
+  <!-- 动态增加的文字区域 -->
+
+
     </div>
     <canvas id="fireworksCanvas"></canvas>
   </div>
@@ -205,5 +214,27 @@
       });
     }
   })();
+  // 最后一页“再说一句祝福”按钮逻辑
+  document.addEventListener('DOMContentLoaded', function () {
+    const addTextBtn = document.getElementById('addTextBtn');
+    const extraText = document.getElementById('extraText');
+
+    if (!addTextBtn || !extraText) return;
+
+    // 可以预设几句祝福，也可以只用一个固定文本
+    const messages = [
+      '愿你每一天都被温柔以待 🌸',
+      '愿你永远保持乐观开朗的样子 ✨',
+      '愿你每天都能笑着进入梦乡 🎂',
+      '愿你能在球场carray全场 💌'
+    ];
+    let idx = 0;
+    addTextBtn.addEventListener('click', function () {
+      const p = document.createElement('p');
+      p.textContent = messages[idx % messages.length];
+      extraText.appendChild(p);
+      idx++;
+    });
+  });
 </script>
 </html>
